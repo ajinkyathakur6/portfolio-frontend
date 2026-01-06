@@ -1,10 +1,15 @@
+import Hero from '@/components/sections/Hero'
+import About from '@/components/sections/About'
+import Skills from '@/components/sections/Skills'
+import Projects from '@/components/sections/Projects'
+
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-32">
-      <h1 className="text-5xl font-bold">Ajinkya Thakur</h1>
-      <p className="mt-4 text-xl text-gray-400">
-        Software Engineer | MERN Stack | DevOps
-      </p>
-    </section>
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+    </>
   )
 }
