@@ -16,10 +16,10 @@ const skills = {
 
 export default function Skills() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-24">
+    <section id="skills" className="max-w-5xl mx-auto px-6 py-28">
       <h2 className="text-3xl font-semibold mb-10">Skills</h2>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
         {Object.entries(skills).map(([category, items]) => (
           <div key={category}>
             <h3 className="text-xl font-medium mb-3">{category}</h3>

@@ -17,14 +17,14 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="max-w-5xl mx-auto px-6 py-24">
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-28">
       <h2 className="text-3xl font-semibold mb-10">Projects</h2>
 
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="border border-gray-800 rounded-lg p-6"
+            className="border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition"
           >
             <h3 className="text-xl font-medium mb-2">
               {project.title}
