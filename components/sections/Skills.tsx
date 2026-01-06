@@ -1,17 +1,24 @@
 const skills = {
-  Languages: ['JavaScript', 'Python', 'Java'],
-  Frontend: ['React', 'Next.js', 'HTML', 'CSS', 'Tailwind'],
-  Backend: ['Node.js', 'NestJS', 'Express', 'REST APIs'],
-  Databases: ['MongoDB', 'PostgreSQL', 'MySQL', 'Prisma'],
-  DevOps: [
-    'Docker',
-    'Jenkins',
-    'Kubernetes',
-    'Oracle Cloud',
-    'Nginx',
-    'Linux',
-    'Git & GitHub',
+  'Full-Stack Development': [
+    'JavaScript',
+    'React',
+    'Next.js',
+    'Node.js',
+    'Express',
+    'NestJS',
+    'REST APIs',
+    'JWT Authentication',
   ],
+  Databases: ['MongoDB', 'PostgreSQL', 'MySQL', 'Prisma'],
+  'DevOps & Cloud': [
+    'Docker',
+    'Kubernetes',
+    'Jenkins',
+    'Nginx',
+    'Oracle Cloud',
+    'Linux',
+  ],
+  Tools: ['Git', 'GitHub', 'Jira', 'Postman'],
 }
 
 export default function Skills() {
@@ -20,11 +27,11 @@ export default function Skills() {
       <h2 className="text-3xl font-semibold mb-10">Skills</h2>
 
       <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
-        {Object.entries(skills).map(([category, items]) => (
-          <div key={category}>
-            <h3 className="text-xl font-medium mb-3">{category}</h3>
+        {Object.entries(skills).map(([title, items]) => (
+          <div key={title}>
+            <h3 className="text-xl font-medium mb-4">{title}</h3>
             <ul className="flex flex-wrap gap-2">
-              {items.map((skill) => (
+              {items.map(skill => (
                 <li
                   key={skill}
                   className="px-3 py-1 bg-gray-800 rounded-md text-sm"
